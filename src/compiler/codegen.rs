@@ -7,7 +7,7 @@ use inkwell::types::{PointerType, VoidType};
 use inkwell::values::{FunctionValue, IntValue, PointerValue};
 use crate::compiler::parser::CodeElement;
 
-const ARRAY_SIZE: i32 = 1<<10;
+const ARRAY_SIZE: i32 = 1<<15;
 pub struct Codegen<'ctx>
 {
     context: &'ctx Context,
